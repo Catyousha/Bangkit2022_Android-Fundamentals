@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:iconTint="@color/white"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"
+        tools:targetApi="o" />
+
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/menu1"
+            android:icon="@drawable/ic_baseline_announcement_24"
+            android:iconTint="@color/white"
+            android:title="@string/menu_1"
+            app:showAsAction="always"
+            tools:targetApi="o" />
+        <item
+            android:id="@+id/menu2"
+            android:title="@string/menu_2" />
+    </group>
+</menu>

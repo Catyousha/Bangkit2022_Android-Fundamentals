@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_specification"
+        style="@style/TextContent.Subtitle"
+        android:layout_marginTop="8dp"
+        android:text="@string/specification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_spec_display_title"
+        android:layout_width="58dp"
+        style="@style/TextSpec.Field"
+        android:text="@string/display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_specification" />
+
+    <TextView
+        android:id="@+id/text_spec_display"
+        style="@style/TextSpec.Value"
+        android:text="@string/content_specs_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/text_spec_display_title" />
+
+    <TextView
+        android:id="@+id/text_spec_size_title"
+        style="@style/TextSpec.Field"
+        android:text="@string/size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_spec_display" />
+
+    <TextView
+        android:id="@+id/text_spec_size"
+        style="@style/TextSpec.Value"
+        android:text="@string/content_specs_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/text_spec_size_title" />
+
+    <TextView
+        android:id="@+id/text_battery_title"
+        style="@style/TextSpec.Field"
+        android:text="@string/battery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_spec_size" />
+
+    <TextView
+        android:id="@+id/text_battery"
+        style="@style/TextSpec.Value"
+        android:text="@string/content_specs_battery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/text_battery_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="105dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
